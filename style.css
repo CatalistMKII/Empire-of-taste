@@ -177,10 +177,10 @@ nav button {
    text-align: center;
 }
 
-.info-K {
+.info-vse {
    position: absolute;
    top: 0;
-   left: -250px;
+   left: -25px;
    width: 200px;
    padding: 15px;
    background-color: #f9f9f9;
@@ -190,10 +190,14 @@ nav button {
    z-index: 100;
 }
 
-.closebro {
+.close {
    position: absolute;
    top: 5px;
    right: 5px;
    cursor: pointer;
    font-weight: bold;
+}
+
+.info-img {
+   cursor: pointer;
 }
