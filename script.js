@@ -109,3 +109,29 @@ document.addEventListener('click', (e) => {
         infoK.style.display = 'none';
     }
 });
+
+// Открытие окон по клику на картинку
+document.querySelectorAll('.info-img').forEach(img => {
+    img.addEventListener('click', () => {
+        const targetId = img.getAttribute('data-target');
+        document.getElementById(targetId).style.display = 'block';
+    });
+});
+
+// Закрытие окон по клику на кнопку закрытия
+document.querySelectorAll('.close-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        document.getElementById(targetId).style.display = 'none';
+    });
+});
+
+// Закрытие окна при клике вне его
+document.addEventListener('click', (e) => {
+    document.querySelectorAll('.info-box').forEach(box => {
+        const img = document.querySelector(info-img[data-target=="${box.id}"]);
+        if (!box.contains(e.target) && e.target !== img) {
+            box.style.display = 'none';
+        }
+    });
+});
