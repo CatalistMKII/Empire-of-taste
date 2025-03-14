@@ -84,3 +84,116 @@ nav button {
    font-size: 1.2rem;
    font-weight: bold;
 }
+
+/* Стилі для модального вікна меню */
+#menuModal .modal-content {
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#menuModal .modal-header {
+   border-bottom: 2px solid #dc3545;
+}
+
+#menuModal .modal-title {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+#menuModal .list-group-item {
+   font-size: 1.1rem;
+   padding: 10px 15px;
+   margin-bottom: 5px;
+   border-radius: 5px;
+   background-color: #f8f9fa;
+   border: 1px solid #ddd;
+}
+
+#menuModal .badge {
+   font-size: 1rem;
+   padding: 5px 10px;
+}
+
+.ev {
+   display: flex;
+   justify-content: center;
+}
+
+.az {
+   display: flex;
+   justify-content: center;
+}
+
+.uk {
+   display: flex;
+   justify-content: center;
+}
+
+.F {
+   width: 450px;
+   height: 350px;
+   margin: 10px;
+   border: 3px solid #dc3545;
+}
+
+.X {
+   display: inline-block;
+   margin-right: 165px;
+   margin-left: 165px;
+}
+
+.M {
+   display: inline-block;
+   margin-right: 200px;
+   margin-left: 200px;
+}
+
+.T {
+   display: inline-block;
+   margin-right: 190px;
+   margin-left: 190px;
+}
+
+.N {
+   display: inline-block;
+   margin-right: 195px;
+   margin-left: 195px;
+   margin-top: -10px;
+}
+
+.eX {
+   text-align: center;
+}
+
+.eM {
+   text-align: center;
+}
+
+.eT {
+   text-align: center;
+}
+
+.eN {
+   text-align: center;
+}
+
+.info-K {
+   position: absolute;
+   top: 0;
+   left: -250px;
+   width: 200px;
+   padding: 15px;
+   background-color: #f9f9f9;
+   border: 1px solid #ccc;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   display: none; 
+   z-index: 100;
+}
+
+.closebro {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   cursor: pointer;
+   font-weight: bold;
+}
