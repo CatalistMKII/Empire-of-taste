@@ -134,6 +134,7 @@ nav button {
    height: 350px;
    margin: 10px;
    border: 3px solid #dc3545;
+   cursor: pointer;
 }
 
 .X {
@@ -177,27 +178,26 @@ nav button {
    text-align: center;
 }
 
-.info-vse {
-   position: absolute;
-   top: 0;
-   left: -25px;
-   width: 200px;
-   padding: 15px;
-   background-color: #f9f9f9;
+.info-K {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 400px;
+   padding: 20px;
+   background-color: #fff;
    border: 1px solid #ccc;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   display: none; 
-   z-index: 100;
+   display: none;
+   z-index: 1000;
 }
 
-.close {
+.closebro {
    position: absolute;
-   top: 5px;
-   right: 5px;
+   top: 10px;
+   right: 10px;
    cursor: pointer;
+   font-size: 20px;
    font-weight: bold;
-}
-
-.info-img {
-   cursor: pointer;
+   color: #dc3545;
 }
