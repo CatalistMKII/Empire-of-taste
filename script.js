@@ -7,7 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
                <p class='fs-5 text-muted'>У нас ви знайдете страви на будь-який смак – від класики європейської кухні до ароматних азіатських страв і традиційних українських смаколиків.</p>
                <button class='btn btn-danger btn-lg animate__animated animate__fadeIn animate__delay-1s' onclick='openMenuModal()'>Переглянути меню</button>`,
         about: `<h1 class='text-danger animate__animated animate__fadeInDown mb-3'>Про ресторан</h1>
-                <p class='fs-5 text-muted'>Історія нашого закладу почалася з великої пристрасті до кулінарії.</p>`,
+                <p class='fs-5 text-muted'>Ми – ресторан, створений для тих, хто цінує смачну їжу, затишну атмосферу та щирий сервіс.</p>
+                <p> Для нас головне – щоб ви почувалися комфортно, як у колі друзів, і могли насолодитися кожним моментом, проведеним у нашому закладі.</p>
+                <p>Ми ретельно підбираємо інгредієнти, використовуючи тільки свіжі та якісні продукти.</p>
+                <p> У нашому меню є як класичні улюблені страви, так і цікаві авторські варіації.</p>
+                <p> Ми хочемо, щоб кожен гість знайшов щось для себе – будь то ситний обід, легка вечеря або десерт до ароматної кави.</p>
+                <p>Наш ресторан – це не просто місце, де можна поїсти. Це простір для приємних зустрічей, дружніх розмов та гарного настрою. </p>
+                <p>Заходьте до нас, і ми зробимо все, щоб вам захотілося повернутися ще не раз! =}</p>`,
         booking: `<h1 class='text-danger animate__animated animate__fadeInDown mb-3'>Бронювання</h1>
                   <p class='fs-5 text-muted'>Заповніть форму, щоб забронювати столик.</p>`
     };
@@ -88,50 +94,26 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("Попередження: Форма бронювання не знайдена.");
     }
 
-    loadPage('home'); 
-});
+    loadPage('home');
 
-
-const img = document.getElementById('ratatouilleImg');
-const infoK = document.getElementById('infoK');
-const closeBro = document.getElementById('closeBro');
-
-img.addEventListener('click', () => {
-    infoK.style.display = 'block';
-});
-
-closeBro.addEventListener('click', () => {
-    infoK.style.display = 'none';
-});
-
-document.addEventListener('click', (e) => {
-    if (!infoK.contains(e.target) && e.target !== img) {
-        infoK.style.display = 'none';
-    }
-});
-
-// Открытие окон по клику на картинку
-document.querySelectorAll('.info-img').forEach(img => {
-    img.addEventListener('click', () => {
-        const targetId = img.getAttribute('data-target');
-        document.getElementById(targetId).style.display = 'block';
+    // Додаємо обробники подій для відображення інформації про страву
+    document.querySelectorAll('.F').forEach(img => {
+        img.addEventListener('click', function() {
+            const infoId = this.id.replace('Img', 'Info');
+            const infoBlock = document.getElementById(infoId);
+            if (infoBlock) {
+                infoBlock.style.display = 'block';
+            }
+        });
     });
-});
 
-// Закрытие окон по клику на кнопку закрытия
-document.querySelectorAll('.close-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const targetId = btn.getAttribute('data-target');
-        document.getElementById(targetId).style.display = 'none';
-    });
-});
-
-// Закрытие окна при клике вне его
-document.addEventListener('click', (e) => {
-    document.querySelectorAll('.info-box').forEach(box => {
-        const img = document.querySelector(info-img[data-target=="${box.id}"]);
-        if (!box.contains(e.target) && e.target !== img) {
-            box.style.display = 'none';
-        }
+    // Додаємо обробники подій для закриття інформаційних блоків
+    document.querySelectorAll('.closebro').forEach(closeBtn => {
+        closeBtn.addEventListener('click', function() {
+            const infoBlock = this.closest('.info-K');
+            if (infoBlock) {
+                infoBlock.style.display = 'none';
+            }
+        });
     });
 });
