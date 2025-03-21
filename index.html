@@ -61,24 +61,31 @@
                 <h5 class="mt-3">Список страв</h5>
                 <h2>Європейська кухня</h2>
                 <div class="ev">
-                  <div class="Cont-KLK">  
-                    <img class="F" src="https://telegraf.com.ua/static/storage/originals/2/85/f723b9abd620b6baaba3ed2afa491852.jpg" alt="Рататуй" class="info-img" id="ratatouilleImg" data-target="infoK">
-                    <img class="F" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuE4ryUa6BoR6iLvPntdMLsrzCIX0IiR5SVg&s" alt="Стейк" id="staikImg">
-                    <img class="F" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd5sGnBvod7URsjV5VQ7vGdF4pfD5068xbOA&s">
+                    <img class="F" src="https://telegraf.com.ua/static/storage/originals/2/85/f723b9abd620b6baaba3ed2afa491852.jpg" alt="Рататуй" id="ratatouilleImg">
+                    <img class="F" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuE4ryUa6BoR6iLvPntdMLsrzCIX0IiR5SVg&s" alt="Стейк Томагавку" id="steakImg">
+                    <img class="F" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd5sGnBvod7URsjV5VQ7vGdF4pfD5068xbOA&s" alt="Ризото" id="risottoImg">
                 </div>
-                <div class="info-vse" id="infoK">
-                    <span class="close" id="closeBro" data-target="closeBro">&times;</span>
+                <!-- Інформація про Рататуй -->
+                <div class="info-K" id="ratatouilleInfo">
+                    <span class="closebro" onclick="closeInfo('ratatouilleInfo')">&times;</span>
                     <h3>Рататуй</h3>
-                    <p>Рататуй — французька овочева страва, що складається з тушкованих баклажанів, кабачків, перцю, помідорів та ароматних трав.</p>
-                    <p><strong>Рецепт:</strong>Нарізати овочі, викласти шарами у форму, посолити, додати оливкову олію, часник, розмарин, запікати 40-50 хвилин при 180°C.</p> 
+                    <p>Французька овочева страва, що складається з тушкованих баклажанів, кабачків, перцю, помідорів та ароматних трав.</p>
+                    <p><strong>Рецепт:</strong> Нарізати овочі, викласти шарами у форму, посолити, додати оливкову олію, часник, розмарин, запікати 40-50 хвилин при 180°C.</p>
                 </div>
-                <div class="info-vse" id="infoL">
-                    <span class="closebroL" id="closeBroL">&times;</span>
-                    <h3>Стейк</h3>
-                    <p>Рататуй — французька овочева страва, що складається з тушкованих баклажанів, кабачків, перцю, помідорів та ароматних трав.</p>
-                    <p><strong>Рецепт:</strong>Нарізати овочі, викласти шарами у форму, посолити, додати оливкову олію, часник, розмарин, запікати 40-50 хвилин при 180°C.</p> 
+                <!-- Інформація про Стейк Томагавку -->
+                <div class="info-K" id="steakInfo">
+                    <span class="closebro" onclick="closeInfo('steakInfo')">&times;</span>
+                    <h3>Стейк Томагавку</h3>
+                    <p>Великий стейк на кістці з мармурової яловичини, відомий своєю соковитістю.</p>
+                    <p><strong>Рецепт:</strong>Замаринувати стейк сіллю, перцем, оливковою олією. Обсмажити по 2-3 хвилини з кожного боку, а потім допекти в духовці 10-15 хвилин при 180°C.</p>
                 </div>
-                  </div>
+                <!-- Інформація про Ризото -->
+                <div class="info-K" id="risottoInfo">
+                    <span class="closebro" onclick="closeInfo('risottoInfo')">&times;</span>
+                    <h3>Ризото</h3>
+                    <p>Італійська страва з рису, приготована з бульйоном, сиром і часто овочами чи морепродуктами.</p>
+                    <p><strong>Рецепт:</strong>Обсмажити цибулю, додати рис, потроху вливаючи бульйон, помішувати до готовності. Додати пармезан, вершкове масло.</p>
+                </div>
                 <div class="eX">
                     <h3 class="X">Рататуй</h3>
                     <h3 class="X">Стейк Томагавку</h3>
@@ -91,9 +98,30 @@
                 </div>
                 <h2>Азійська кухня</h2>
                 <div class="az">
-                    <img class="F" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9lRqZ23zxH0s0uUhdhiCtwkG_btkEtH4cgw&s">
-                    <img class="F" src="https://cdn.cookery.com.ua/uploads/images/100/8453/84533.jpg">
-                    <img class="F" src="https://media.unt.ua/thumb/thumb.php?src=/upload/12.11.2019/a24ec55bb3a79111c0102b8b13fce83b.jpeg&size=1200x800">
+                    <img class="F" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9lRqZ23zxH0s0uUhdhiCtwkG_btkEtH4cgw&s" alt="Том Ям" id="tomYamImg">
+                    <img class="F" src="https://md.ua/storage/editor/fotos/e1e0c14815c36af4cf50d5d71ded9e4d.jpg" alt="Рамен" id="ramenImg">
+                    <img class="F" src="https://media.unt.ua/thumb/thumb.php?src=/upload/12.11.2019/a24ec55bb3a79111c0102b8b13fce83b.jpeg&size=1200x800" alt="Суші" id="sushiImg">
+                </div>
+                <!-- Інформація про Том Ям -->
+                <div class="info-K" id="tomYamInfo">
+                    <span class="closebro" onclick="closeInfo('tomYamInfo')">&times;</span>
+                    <h3>Том Ям</h3>
+                    <p>Тайський гостро-кислий суп із креветками, лимонником, лаймом та чилі.</p>
+                    <p><strong>Рецепт:</strong>Варити бульйон з лимонником, галангалом, чилі, додати креветки, гриби, рибний соус, сік лайма, варити 5-7 хвилин.</p>
+                </div>
+                <!-- Інформація про Рамен -->
+                <div class="info-K" id="ramenInfo">
+                    <span class="closebro" onclick="closeInfo('ramenInfo')">&times;</span>
+                    <h3>Рамен</h3>
+                    <p>Японський суп з локшиною, бульйоном, м’ясом і яйцем.</p>
+                    <p><strong>Рецепт:</strong>Зварити бульйон (кістковий або курячий), додати варену локшину, обсмажене м'ясо, половину вареного яйця та зелень.</p>
+                </div>
+                <!-- Інформація про Суші -->
+                <div class="info-K" id="sushiInfo">
+                    <span class="closebro" onclick="closeInfo('sushiInfo')">&times;</span>
+                    <h3>Суші</h3>
+                    <p>Японська страва з рису, риби та овочів, загорнутих у норі.</p>
+                    <p><strong>Рецепт:</strong>Відварити рис, заправити рисовим оцтом, викласти на норі, додати рибу/овочі, скрутити рол і нарізати.</p>
                 </div>
                 <div class="eM">
                     <h3 class="M">Том Ям</h3>
@@ -107,9 +135,30 @@
                 </div>
                 <h2>Українська кухня</h2>
                 <div class="uk">
-                    <img class="F" src="https://img.povar.ru/320w/ab/23/b4/9c/samii_vkusnii_borsh-404089.jpg">
-                    <img class="F" src="https://food.net.ua/uploads/posts/2023-07/vareniki-na-vode-s-vishnei_1588924206_11_max.jpg">
-                    <img class="F" src="https://i0.wp.com/www.ukrgate.com/ukr/wp-content/uploads/2021/02/%D0%B4%D0%B5%D1%80%D0%B2%D0%BD%D1%83.jpg?fit=1000%2C700&ssl=1">
+                    <img class="F" src="https://img.povar.ru/320w/ab/23/b4/9c/samii_vkusnii_borsh-404089.jpg" alt="Борщ" id="borshchImg">
+                    <img class="F" src="https://media.istockphoto.com/id/1127058143/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%84%D0%B5%D0%BB%D0%B5%D0%BC-%D0%BF%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8-%D1%81-%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%BA%D0%BE%D0%B9.jpg?s=612x612&w=0&k=20&c=mS8ZT8_vzmQTPDgz8NxVFpGmtAGvmLpB2l7SrNBdqi4=" alt="Вареники" id="varenykyImg">
+                    <img class="F" src="https://i0.wp.com/www.ukrgate.com/ukr/wp-content/uploads/2021/02/%D0%B4%D0%B5%D1%80%D0%B2%D0%BD%D1%83.jpg?fit=1000%2C700&ssl=1" alt="Деруни" id="derunyImg">
+                </div>
+                <!-- Інформація про Борщ -->
+                <div class="info-K" id="borshchInfo">
+                    <span class="closebro" onclick="closeInfo('borshchInfo')">&times;</span>
+                    <h3>Борщ</h3>
+                    <p>Традиційний суп на основі буряка, капусти, картоплі, моркви і м'яса.</p>
+                    <p><strong>Рецепт:</strong>Зварити м'ясний бульйон, додати нарізані овочі, спеції, томатну пасту. Варити до готовності овочів, подавати зі сметаною.</p>
+                </div>
+                <!-- Інформація про Вареники -->
+                <div class="info-K" id="varenykyInfo">
+                    <span class="closebro" onclick="closeInfo('varenykyInfo')">&times;</span>
+                    <h3>Вареники</h3>
+                    <p>Тісто, начинене картоплею, сиром, вишнями чи м'ясом.</p>
+                    <p><strong>Рецепт:</strong>Замісити тісто, розкачати, вирізати кружечки, додати начинку, зліпити та варити 5-7 хвилин у підсоленій воді.</p>
+                </div>
+                <!-- Інформація про Деруни -->
+                <div class="info-K" id="derunyInfo">
+                    <span class="closebro" onclick="closeInfo('derunyInfo')">&times;</span>
+                    <h3>Деруни</h3>
+                    <p>Терті картопляні оладки, обсмажені на олії.</p>
+                    <p><strong>Рецепт:</strong>Натерти картоплю, змішати з яйцем, сіллю, перцем, сформувати оладки та обсмажити з обох боків до золотистої скоринки.</p>
                 </div>
                 <div class="eT">
                     <h3 class="T">Борщ</h3>
